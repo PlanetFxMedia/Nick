@@ -1,0 +1,10 @@
+name: PlanetFxNick
+version: 0.1
+author: Sebastian Mikolai
+
+main: de.SebastianMikolai.PlanetFx.Nick.Nick
+
+commands:
+  nick:
+    description: PlanetFxNick Commands
+    usage: /nick
