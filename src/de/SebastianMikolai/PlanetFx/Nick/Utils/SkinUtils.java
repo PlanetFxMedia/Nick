@@ -154,6 +154,11 @@ public class SkinUtils {
 				((CraftPlayer) players).getHandle().playerConnection.sendPacket(destroy);
 			}
 		}
+		
+		for (Player players : Bukkit.getOnlinePlayers()) {
+			((CraftPlayer) players).getHandle().playerConnection.sendPacket(destroy);
+		}
+		
 		GameProfile gp = ep.getProfile();
 		gp.getProperties().clear();
 		gp.getProperties().put(name, new Property(name, value, signature));
@@ -183,8 +188,13 @@ public class SkinUtils {
 					p.setOp(isOp);
 					NickManager.getInstance().NoDeath.remove(p);
 				}
+				for (Player players : Bukkit.getOnlinePlayers()) {
+					players.hidePlayer(p);
+					players.showPlayer(p);
+				}
 			}
 		}.runTaskLater(Nick.getInstance(), 2L);
+
 	}
 
 	public static Field getField(Class<?> clazz, String name) {

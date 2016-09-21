@@ -18,7 +18,7 @@ import de.SebastianMikolai.PlanetFx.Nick.Utils.UUIDFetcher;
 public class NickManager {
 
 	private static NickManager instance;
-	public List<FakePlayer> FakePlayers = new ArrayList<FakePlayer>();
+	public static List<FakePlayer> FakePlayers = new ArrayList<FakePlayer>();
 	public Map<Player, String> RealPlayers = new HashMap<Player, String>();
 	private Map<UUID, UUID> NickedPlayers = new HashMap<UUID, UUID>();
 	public HashMap<UUID, String[]> PlayerDatas = new HashMap<UUID, String[]>();
