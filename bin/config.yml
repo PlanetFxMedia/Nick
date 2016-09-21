@@ -1,6 +1,18 @@
+#Permissions
+#pfx.nick.use
+
 database:
   host: localhost
   port: 3306
-  db: akonia_serversystem
+  db: akonia_bungeecord
   user: root
   password: U2ViYXN0aWFuMTIy
+Messages:
+  Prefix: '&4[&6Nick&4] &r'
+  OnlyPlayer: '&4Du musst ein Spieler sein!'
+  NoPermission: '&4Dafür hast du keine Berechtigung!'
+  IsNicked: '&4Du bist bereits genickt!'
+  IsNotNicked: '&4Du bist nicht genickt!'
+  NotFound: '&4Es wurde kein passender Nick gefunden!'
+  Nicked: '&6Du bist jetzt genickt!'
+  UnNicked: '&6Du bist jetzt nicht mehr genickt!'
