@@ -66,7 +66,8 @@ public class MySQL {
 				Bukkit.getLogger().info(rss.getString("PlayerName"));
 				UUID.fromString(rss.getString("PlayerUUID"));
 				FakePlayer fp = new FakePlayer(UUID.fromString(rss.getString("PlayerUUID")), rss.getString("PlayerName"));
-				NickManager.getInstance().FakePlayers.add(fp);
+				NickManager.getInstance();
+				NickManager.FakePlayers.add(fp);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
